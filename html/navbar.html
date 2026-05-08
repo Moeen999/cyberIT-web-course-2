@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Charity Blush Navbar Practice</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Outfit", sans-serif;
+      min-height: 100vh;
+      width: 100%;
+    }
+    .navbar-container {
+      width: 80%;
+      margin: 0 auto;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      display: flex;
+      gap: 8px;
+    }
+    .logo {
+      background: linear-gradient(to left, #821435, #b62f5e);
+      padding: 4px;
+      border-radius: 4px;
+      color: white;
+    }
+    .logo-container span {
+      color: rgba(0, 0, 0, 0.826);
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .links-container {
+      display: flex;
+      gap: 12px;
+    }
+    .links-container a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.841);
+      font-weight: 500;
+    }
+    .links-container a:hover {
+      color: rgba(0, 0, 0, 0.641);
+    }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+    }
+    .firstBtn {
+      display: flex;
+    }
+    .firstBtn a {
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px;
+      border-radius: 8px;
+    }
+    .firstBtn a:hover {
+      color: rgba(0, 0, 0, 0.841);
+      background-color: rgba(0, 0, 0, 0.329);
+    }
+  </style>
+  <body>
+    <nav class="navbar-container">
+      <div class="logo-container">
+        <div class="logo">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <span>Qatar Charity</span>
+      </div>
+
+      <div class="links-container">
+        <a href="#">Home</a><a href="#">Campaigns</a><a href="#">About</a
+        ><a href="#">Donor</a><a href="#">Contact</a>
+      </div>
+      <div class="buttons-container">
+        <div class="firstBtn">
+          <a href="#">Login</a>
+          <button>Donate Now</button>
+        </div>
+        <div class="secondBtn">
+          <button>Dashboard</button>
+          <a href="#">AR</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
